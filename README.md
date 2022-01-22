@@ -16,3 +16,7 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ### Web Scrapping done to collect words.
+
+- Inspect the list and get the JS path.
+- Get the innerText of the JS path in the console.
+- Split it and convert it into JSON
