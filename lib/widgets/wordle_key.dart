@@ -19,9 +19,28 @@ class WordleKey extends ConsumerWidget {
     }
     else{
       width =35;
-      keyCap=Text(letter, style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold));
+      keyCap=Text(letter.toUpperCase(), style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold));
     }
 
+    return InkWell(
+      onTap: (){
+        ref.read(gameStateProvider.notifier).updateCurrentAttempt(letter);
+      },
+      child: Container(
+        width: width,
+        height: 55,
+        alignment: Alignment.center,
+        //padding: EdgeInsets.all(10),
+        margin: EdgeInsets.all(3),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(4)),
+          //border: Border.all(color: Colors.grey, width: 2),
+          color: Color.fromARGB(44,44,44,44),
+        ),
+        child: keyCap,
+      ),
+    );
+    /*
     return Container(
       width: width,
       height: 55,
@@ -33,12 +52,9 @@ class WordleKey extends ConsumerWidget {
         //border: Border.all(color: Colors.grey, width: 2),
         color: Color.fromARGB(44,44,44,44),
       ),
-      child: InkWell(
-        onTap:(){
-          ref.read(gameStateProvider.notifier).updateCurrentAttempt(letter);
-        },
-        child: keyCap,
-      ),
+      child: keyCap,
     );
+
+     */
   }
 }
