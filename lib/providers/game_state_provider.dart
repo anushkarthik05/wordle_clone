@@ -61,7 +61,8 @@ class GameStateNotifier extends StateNotifier<GameState>{
         return;
       }
       if(!state.validWords.contains(currentAttempt)){
-        print("Not in valid words list"); // Change it to Toast.
+        print("Not in valid words list");
+        return;// Change it to Toast.
       }
       state=state.clone(
         attempted: state.attempted+1,
