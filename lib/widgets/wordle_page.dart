@@ -9,9 +9,9 @@ class WordlePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      /*appBar: AppBar(
         //title: Text("Wordle"),
-      ),
+      ),*/
       body: Container(
         child: Column(
           mainAxisSize: MainAxisSize.max,
