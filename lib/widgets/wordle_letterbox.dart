@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class WordleLetterbox extends StatelessWidget {
-  const WordleLetterbox({Key? key}) : super(key: key);
+  final String? letter;
+  const WordleLetterbox({Key? key,this.letter}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +16,7 @@ class WordleLetterbox extends StatelessWidget {
       decoration: BoxDecoration(
         border: Border.all(color: Colors.grey, width: 2),
       ),
+      child: Text(letter??"",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
     );
   }
 }
