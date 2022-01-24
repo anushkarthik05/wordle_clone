@@ -1,4 +1,4 @@
-name: Wordle Clone
+name: Flutter Web
 on:
   push:
     branches:
