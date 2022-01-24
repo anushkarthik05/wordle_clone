@@ -1,4 +1,6 @@
 name: Flutter Web
+env:
+  sdk: ">=2.16.0-134.1.beta <3.0.0"
 on:
   push:
     branches:
