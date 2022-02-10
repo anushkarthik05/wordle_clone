@@ -94,7 +94,6 @@ class GameStateNotifier extends StateNotifier<GameState>{
     }
   }
 }
-
 final gameStateProvider = StateNotifierProvider<GameStateNotifier,GameState>((ref){
     final settings = ref.watch(gameSettingsProvider);
     final gameStateNotifier = GameStateNotifier(settings);
