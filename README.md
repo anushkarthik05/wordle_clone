@@ -21,4 +21,4 @@ samples, guidance on mobile development, and a full API reference.
 - Get the innerText of the JS path in the console.
 - Split it and convert it into JSON
 
-## Do Check it out at [wordle-clone](https://anushkarthik05.github.io/wordle-clone-web-deploy/)
+## Do Check it out at [wordle-clone](https://anushkarthik05.github.io/wordle_clone/)
