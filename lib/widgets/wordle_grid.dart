@@ -1,13 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wordle_clone/providers/game_settings_provider.dart';
 import 'package:wordle_clone/providers/game_state_provider.dart';
-import 'package:wordle_clone/widgets/wordle_letterbox.dart';
+/*import 'package:wordle_clone/widgets/wordle_letterbox.dart';*/
 import 'package:wordle_clone/widgets/wordle_row.dart';
-
-import '../providers/game_state_provider.dart';
-
 
 class WordleGrid extends ConsumerWidget {
   const WordleGrid({Key? key}) : super(key: key);
@@ -28,7 +24,7 @@ class WordleGrid extends ConsumerWidget {
       if(gameState.attempted>i){
         attempted=true;
       }
-      rows.add(WordleRow(wordsize: wordSize,word:word,correctWord:gameState.correctWord,attempted: attempted,));
+      rows.add(WordleRow(wordsize: wordSize,correctWord:gameState.correctWord,word:word,attempted: attempted,));
     }
     return Container(
       child: Column(

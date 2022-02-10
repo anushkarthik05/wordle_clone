@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wordle_clone/providers/game_settings_provider.dart';
 
-import '../data/wordle_repo.dart';
+import 'package:wordle_clone/data/wordle_repo.dart';
 
 class GameState{
   final GameSettings settings;

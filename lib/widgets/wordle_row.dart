@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:wordle_clone/widgets/wordle_letterbox.dart';
 
 class WordleRow extends StatelessWidget {
@@ -22,8 +22,7 @@ class WordleRow extends StatelessWidget {
 
     return Row(
       mainAxisSize: MainAxisSize.min,
-      children:
-      boxes,
+      children: boxes,
     );
   }
 }
