@@ -3,7 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wordle_clone/widgets/wordle_page.dart';
 
 void main() {
-  runApp(const ProviderScope(child:MyApp()));
+  const providerScopedApp =  ProviderScope(child: MyApp());
+  FlutterError.onError = (FlutterErrorDetails details) {
+
+  };
+  runApp(providerScopedApp);
 }
 
 class MyApp extends StatelessWidget {
