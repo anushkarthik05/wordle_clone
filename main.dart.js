@@ -14558,7 +14558,7 @@ while(true)switch(s){case 0:p=J
 o=t.j
 n=B.aj
 s=3
-return A.aA($.FB().Ng(""+a+"_letter_words.json"),$async$WO)
+return A.aA($.FB().Ng("assets/"+a+"_letter_words.json"),$async$WO)
 case 3:q=p.tF(o.a(n.yD(0,c,null)),t.N)
 s=1
 break
