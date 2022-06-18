@@ -1,5 +1,7 @@
 # wordle_clone
 
+![WORDLE-banner](https://user-images.githubusercontent.com/58391353/174446975-00e1b92c-f030-4e5c-a669-c3cd9cae1b4f.png)
+
 A new Flutter project.
 
 ## Getting Started
